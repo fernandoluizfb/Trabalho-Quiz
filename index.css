@@ -1,24 +1,24 @@
 
+head {
+    font-family: gudea;
+}
 
 
 body {
     background-color: black;
-    color: #ffffff
+    color: #ffffff;
+    font-family: Gudea;
     
 
 
 }
 
-head {
-    font-family: gudea;
-
-}
 
 
 h1 {
     text-align: center;
     font-size: 26px;
-    font-family: Gudea;
+
 
 
 }
@@ -30,11 +30,60 @@ h1 {
 
 }
 
-.simbolo-corinthians > img {
-    height: 350px;
-    width: 300px;
+.simbolo-corinthians {
+
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.simbolo-corinthians > img {
+    border-radius: 200px;
+    max-width: 340px;
+    max-height: 280px;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 80px;
+
+}
+
+.imagens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 700px;
+    margin: auto;
+
     
 
 }
+
+.imagens > div {
+    
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.imagens img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.resposta,
+resultado {
+    display: none;
+    text-align: center;
+}
+
+
