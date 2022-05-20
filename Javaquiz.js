@@ -15,7 +15,6 @@ function checkAnswer( event ) {
   
     if ( alternativa.classList.contains( 'correct' ) ) {
   
-      // Troca o texto do resultado por “Acertou :)”
       resultado.textContent = 'Se você ama futebol e não conhece Cláudio, isso não é exatamente um problema. É que o maior artilheiro de um dos maiores clubes do Brasil se tornou famoso na década de 1950. Em 550 jogos, ele marcou 305 gols e levantou 8 taças'
   
       resultado.style.color = 'White'
