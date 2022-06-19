@@ -1,13 +1,13 @@
 
 head {
-    font-family: gudea;
+    font-family: calibri;
 }
 
 
 body {
     background-color: black;
     color: #ffffff;
-    font-family: Gudea;
+    font-family: Calibri;
     
 
 
@@ -80,10 +80,15 @@ h2 {
     padding: 5px;
 }
 
-.resposta,
-resultado {
+.resposta {
     display: none;
     text-align: center;
+    
+    margin-bottom: 8px;
+    margin-top: 30px;
 }
+
+
+
 
 
