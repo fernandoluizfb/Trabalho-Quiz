@@ -62,7 +62,7 @@ h2 {
 
 }
 
-.imagens > div {
+.imagens > li {
     
     width: 33.3%;
     display: flex;
@@ -88,6 +88,10 @@ h2 {
     margin-top: 30px;
 }
 
+p {
+    margin-left: 160px;
+    margin-right: 160px;
+}
 
 
 

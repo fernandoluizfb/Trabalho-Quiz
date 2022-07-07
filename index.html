@@ -1,147 +1,122 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz do CURINTIA</title>
+  </head>
 
-
-    <head>
-        
-        <link rel="stylesheet" href="index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title> Quiz do CURINTIA</title>
-
-        
-
-
-    </head>
-
-<body>
-
+  <body>
     <section class="quiz">
+      <h1>Quiz do CURINTIA</h1>
+      <div class="subtitulo">
+        Um game sobre a história de um gigante do futebol brasileiro
+      </div>
 
-        <h1>Quiz do CURINTIA</h1>
-        <div class=subtitulo> Um game sobre a história de um gigante do futebol brasileiro</div>
+      <div class="simbolo-corinthians">
+        <img src="Corinthians.jpg" alt="" />
+      </div>
+
+      <h2>Quem é o maior artilheiro da história do clube?</h2>
+
+      <ol class="imagens">
+        <li class="imagem claudio">
+          <img src="Claudio.jpg" alt="" />
+          <p>Claudio</p>
+        </li>
+     
+
+        <li class="imagem marcelinho-carioca">
+          <img src="marcelinho.jpg" alt="" />
+          <p>Marcelinho-Carioca</p>
+        </li>
+
+        <li class="imagem jo">
+          <img src="Jo.jpg" alt="" />
+          <p>Jô</p>
+        </li>
+
+        <li class="imagem paulinho">
+          <img src="Paulinho.jpg" alt="" />
+          <p>Paulinho</p>
+        </li>
         
-        <div class="simbolo-corinthians">
-        <img src="Corinthians.jpg" alt="">
-        </div>
+        <li class="imagem socrates">
+          <img src="Socrates.jpg" alt="" />
+          <p>Sócrates</p>
+        </li>
+        
 
+        <li class="imagem Neto">
+          <img src="Neto.jpg" alt="" />
+          <p>Neto</p>
+        </li>
+      </ol>
 
-        <h2> Quem é o maior artilheiro da história do clube? </h2>
+      <div class="resposta">
+        <p class="resultado"></p>
+        <h2>Resultado</h2>
 
-            <ol>
-                <div class="imagens">
-
-                    <div class="imagem claudio"> 
-                        <img src="Claudio.jpg" alt="">
-                        <li><p>Claudio</p></li> 
-                    </div>
-
-
-                    <div class="imagem marcelinho-carioca">
-                        <img src="marcelinho.jpg" alt="">
-                        <li><p>Marcelinho-Carioca</p></li>
-                    </div>
-
-
-                    <div class="imagem jo">
-                        <img src="Jo.jpg" alt="">
-                        <li><p>Jô</p></li>
-                    </div>
-
-                    <div class="imagem paulinho">
-                        <img src="Paulinho.jpg" alt="">
-                        <li><p>Paulinho</p></li>
-                    </div>
-
-                    <div class="imagem socrates">
-                        <img src="Socrates.jpg" alt="">
-                        <li><p>Sócrates</p></li>
-                    </div>
-
-                    <div class="imagem Neto">
-                        <img src="Neto.jpg" alt="">
-                        <li><p>Neto</p></li>
-                    </div>
-
-
-            </ol>
-
-                    <div class="resposta">
-                    <p class="resultado"></p>
-                    <li><p>Resultado</p></li>
-
-                    <p>Cláudio é o maior artilheiro do Corinthians. Famoso na década de 1950, ele marcou 305 gols e levantou 8 troféus em 550 jogos pelo clube</p>
-
-
-
-
-                  </div>
+        <p>
+          Cláudio é o maior artilheiro do Corinthians. Famoso na década de 1950,
+          ele marcou 305 gols e levantou 8 troféus em 550 jogos pelo clube
+        </p>
+      </div>
     </section>
 
+    <script>
+      let quiz = document.querySelector(".quiz");
+      let resultado = document.querySelector(".resultado");
+      let resposta = document.querySelector(".resposta");
+
+      function checarResposta(event) {
+
+        quiz.style.pointerEvents = "none"
+
+        if ( this.classList.contains("claudio")) {
+          alert("Acertou =)"
+          );
+
+        } else if ( this.classList.contains("Marcelinho-Carioca")) {
+          alert(
+            "Errou =( Apelidado de pé de anjo, Marcelinho fez 206 gols e é o 5º maior artilheiro do clube"
+          );
+
+        } else if (this.classList.contains("Jô")) {
+          alert(
+            "Errou =( Formado na base da instituição, o atacante possui 65 gols em 284 jogos pelo Corinthians. É o maior goleador da instituição no século XXI"
+          );
+
+        } else if (this.classList.contains("Paulinho")) {
+          alert("Errou =( Paulinho soma 34 gols em 167 jogos"
+          );
+
+        } else if (this.classList.contains ("Sócrates")) {
+          alert(
+            "Errou =( Um dos líderes da democracia corintiana, Sócrates soma 172 gols pelo Timão e figura como o 8º maior artilheiro do clube"
+          );
 
 
+        } else if (this.classList.contains ("Neto")) {
+          alert(
+            "Errou =( Meia polêmico, Neto foi um dos responsáveis pela conquista do primeiro campeonato brasileiro do clube em 1990. No total, foram 80 gols pelo Timão"
+          );
 
-
-   <script>
-
-
-
-    let quiz = document.querySelector( ".quiz" )
-    let resultado = document.querySelector( ".resultado" )
-    let resposta = document.querySelector ( ".resposta" )
-
-    function checarResposta( event ) {
-
-        
-       if ( this.textContent == "Claudio" ) {
-           alert ( "Acertou =)" ) 
-
-    
-
-        } else if ( this.textContent == "Marcelinho-Carioca") {
-        alert ( "Errou =( Apelidado de pé de anjo, Marcelinho fez 206 gols e é o 5º maior artilheiro do clube" )
-        
-        } else if ( this.textContent == "Jô") {
-        alert ( "Errou =( Formado na base da instituição, o atacante possui 65 gols em 284 jogos pelo Corinthians. É o maior goleador da instituição no século XXI" )
-
-        } else if ( this.textContent == "Paulinho") {
-        alert ( "Errou =( Paulinho soma 34 gols em 167 jogos" )
-
-        } else if ( this.textContent == "Sócrates") {
-        alert ( "Errou =( Um dos líderes da democracia corintiana, Sócrates soma 172 gols pelo Timão e figura como o 8º maior artilheiro do clube" )
-
-        } else if ( this.textContent == "Sócrates") {
-        alert ( "Errou =( Um dos líderes da democracia corintiana, Sócrates soma 172 gols pelo Timão e figura como o 8º maior artilheiro do clube" )
-
-        } else if ( this.textContent == "Neto") {
-        alert ( "Errou =( Meia polêmico, Neto foi um dos responsáveis pela conquista do primeiro campeonato brasileiro do clube em 1990. No total, foram 80 gols pelo Timão" )
-        
         } else {
-        alert( "Errou =(" )
-
-
-        
+          alert("Errou =(");
         }
 
-
-
         // mostra resposta
-        resposta.style.display = "initial"
+        resposta.style.display = "initial";
+      }
 
-    }
+      // Seleciona todas as <li>
+      let imagens = document.querySelectorAll("li");
 
-    // Seleciona todas as <li>
-    let imagens = document.querySelectorAll( "li" )
-
-    // Para cada <li>
-    for ( let imagem of imagens ) {
-
+      // Para cada <li>
+      for (let imagem of imagens) {
         // Ouça o evento de click
-        imagem.addEventListener( "click", checarResposta ) 
-    }
-
-
-
-
-   </script>
-
-</body>
+        imagem.addEventListener("click", checarResposta);
+      }
+    </script>
+  </body>
 </html>
