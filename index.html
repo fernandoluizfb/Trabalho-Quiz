@@ -64,18 +64,26 @@
     </section>
 
     <script>
+
+      // Ativa as funções para o quiz, o resultado selecionado e também para a resposta
       let quiz = document.querySelector(".quiz");
       let resultado = document.querySelector(".resultado");
       let resposta = document.querySelector(".resposta");
 
+      // Cria a função para checar a resposta
       function checarResposta(event) {
 
+
+        // Vai inativar o quiz após o usuário tentar a primeira resposta
         quiz.style.pointerEvents = "none"
 
+
+        // Estabelece a condição de "Claudio" como a resposta correta
         if ( this.classList.contains("claudio")) {
           alert("Acertou =)"
           );
 
+        // Coloca as demais respostas como condições incorretas  
         } else if ( this.classList.contains("Marcelinho-Carioca")) {
           alert(
             "Errou =( Apelidado de pé de anjo, Marcelinho fez 206 gols e é o 5º maior artilheiro do clube"
